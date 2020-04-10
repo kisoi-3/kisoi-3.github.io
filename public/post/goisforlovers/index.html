@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>(Hu)go Template Primer - Mainroad</title>
+	<title>(Hu)go Template Primer - kisoi3 blog</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 	<meta property="og:title" content="(Hu)go Template Primer" />
@@ -15,17 +15,25 @@ logic to be able to create a good static website. If you have used other
 template systems from different languages or frameworks you will find a lot of
 similarities in Go templates." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/post/goisforlovers/" />
+<meta property="og:url" content="https://kisoi-3.github.io/post/goisforlovers/" />
 <meta property="article:published_time" content="2014-04-02T00:00:00+00:00" />
 <meta property="article:modified_time" content="2014-04-02T00:00:00+00:00" />
 
-	
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="(Hu)go Template Primer"/>
+<meta name="twitter:description" content="Hugo uses the excellent Go html/template library for
+its template engine. It is an extremely lightweight engine that provides a very
+small amount of logic. In our experience that it is just the right amount of
+logic to be able to create a good static website. If you have used other
+template systems from different languages or frameworks you will find a lot of
+similarities in Go templates."/>
+
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
-	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="https://kisoi-3.github.io/css/style.css">
 	
-	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="shortcut icon" href="https://kisoi-3.github.io/favicon.ico">
 		
 </head>
 <body class="body">
@@ -33,9 +41,9 @@ similarities in Go templates." />
 		<header class="header">
 	<div class="container">
 		<div class="logo">
-			<a class="logo__link" href="/" title="Mainroad" rel="home">
-				<div class="logo__title">Mainroad</div>
-				<div class="logo__tagline">Just another site</div>
+			<a class="logo__link" href="https://kisoi-3.github.io/" title="kisoi3 blog" rel="home">
+				<div class="logo__title">kisoi3 blog</div>
+				<div class="logo__tagline">地獄は対岸にあるのではない。背後にあるのだ。</div>
 			</a>
 		</div>
 		
@@ -45,28 +53,28 @@ similarities in Go templates." />
 	</button>
 	<ul class="menu__list">
 		<li class="menu__item">
-			<a class="menu__link" href="/post/migrate-from-jekyll/">
+			<a class="menu__link" href="https://kisoi-3.github.io/post/migrate-from-jekyll/">
 				
 				<span class="menu__text">Jekyll migration</span>
 				
 			</a>
 		</li>
 		<li class="menu__item menu__item--active">
-			<a class="menu__link" href="/post/goisforlovers/">
+			<a class="menu__link" href="https://kisoi-3.github.io/post/goisforlovers/">
 				
 				<span class="menu__text">(Hu)go Template Primer</span>
 				
 			</a>
 		</li>
 		<li class="menu__item">
-			<a class="menu__link" href="/about/">
+			<a class="menu__link" href="https://kisoi-3.github.io/about/">
 				
 				<span class="menu__text">About Hugo</span>
 				
 			</a>
 		</li>
 		<li class="menu__item">
-			<a class="menu__link" href="/post/hugoisforlovers/">
+			<a class="menu__link" href="https://kisoi-3.github.io/post/hugoisforlovers/">
 				
 				<span class="menu__text">Getting Started with Hugo</span>
 				
@@ -86,12 +94,12 @@ similarities in Go templates." />
 			<h1 class="post__title">(Hu)go Template Primer</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2014-04-02T00:00:00Z">April 02, 2014</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/development/" rel="category">Development</a>, <a class="meta__link" href="/categories/golang/" rel="category">golang</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2014-04-02T00:00:00Z">April 02, 2014</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="https://kisoi-3.github.io/categories/development/" rel="category">Development</a>, <a class="meta__link" href="https://kisoi-3.github.io/categories/golang/" rel="category">golang</a>
 	</span>
 </div></div>
 		</header>
 		<figure class="post__thumbnail">
-			<img src="/img/placeholder.png" alt="(Hu)go Template Primer">
+			<img src="https://kisoi-3.github.io/img/placeholder.png" alt="(Hu)go Template Primer">
 		</figure><div class="content post__content clearfix">
 			<p>Hugo uses the excellent <a href="https://golang.org/">Go</a> <a href="https://golang.org/pkg/html/template/">html/template</a> library for
 its template engine. It is an extremely lightweight engine that provides a very
@@ -130,7 +138,7 @@ functions.</p>
 <p>Each Go template has a struct (object) made available to it. In hugo each
 template is passed either a page or a node struct depending on which type of
 page you are rendering. More details are available on the
-<a href="/layout/variables">variables</a> page.</p>
+<a href="https://kisoi-3.github.io/layout/variables">variables</a> page.</p>
 <p>A variable is accessed by referencing the variable name.</p>
 <pre><code>&lt;title&gt;{{ .Title }}&lt;/title&gt;
 </code></pre>
@@ -141,7 +149,7 @@ page you are rendering. More details are available on the
 <h2 id="functions">Functions</h2>
 <p>Go template ship with a few functions which provide basic functionality. The Go
 template system also provides a mechanism for applications to extend the
-available functions with their own. <a href="/layout/functions">Hugo template
+available functions with their own. <a href="https://kisoi-3.github.io/layout/functions">Hugo template
 functions</a> provide some additional functionality we believe
 are useful for building websites. Functions are called by using their name
 followed by the required parameters separated by spaces. Template
@@ -272,7 +280,7 @@ type (supported by your front matter/config format) and use them however
 you want to inside of your templates.</p>
 <h2 id="using-content-page-parameters">Using Content (page) Parameters</h2>
 <p>In each piece of content you can provide variables to be used by the
-templates. This happens in the <a href="/content/front-matter">front matter</a>.</p>
+templates. This happens in the <a href="https://kisoi-3.github.io/content/front-matter">front matter</a>.</p>
 <p>An example of this is used in this documentation site. Most of the pages
 benefit from having the table of contents provided. Sometimes the TOC just
 doesn&rsquo;t make a lot of sense. We&rsquo;ve defined a variable in our front matter
@@ -334,19 +342,19 @@ so, such as in this example:</p>
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/go/" rel="tag">go</a>
+			<a class="tags__link btn" href="https://kisoi-3.github.io/tags/go/" rel="tag">go</a>
 		</li>
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/golang/" rel="tag">golang</a>
+			<a class="tags__link btn" href="https://kisoi-3.github.io/tags/golang/" rel="tag">golang</a>
 		</li>
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/templates/" rel="tag">templates</a>
+			<a class="tags__link btn" href="https://kisoi-3.github.io/tags/templates/" rel="tag">templates</a>
 		</li>
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/themes/" rel="tag">themes</a>
+			<a class="tags__link btn" href="https://kisoi-3.github.io/tags/themes/" rel="tag">themes</a>
 		</li>
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/development/" rel="tag">development</a>
+			<a class="tags__link btn" href="https://kisoi-3.github.io/tags/development/" rel="tag">development</a>
 		</li>
 	</ul>
 </div>
@@ -356,25 +364,25 @@ so, such as in this example:</p>
 
 <div class="authorbox clearfix">
 	<figure class="authorbox__avatar">
-		<img alt="John Doe avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+		<img alt="競イさん avatar" src="https://kisoi-3.github.io/img/avatar.png" class="avatar" height="90" width="90">
 	</figure>
 	<div class="authorbox__header">
-		<span class="authorbox__name">About John Doe</span>
+		<span class="authorbox__name">About 競イさん</span>
 	</div>
 	<div class="authorbox__description">
-		John Doe&#39;s true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it.
+		いつも何かを追いかけているのだ。
 	</div>
 </div>
 
 <nav class="post-nav flex">
 	<div class="post-nav__item post-nav__item--prev">
-		<a class="post-nav__link" href="/post/hugoisforlovers/" rel="prev">
+		<a class="post-nav__link" href="https://kisoi-3.github.io/post/hugoisforlovers/" rel="prev">
 			<span class="post-nav__caption">«&thinsp;Previous</span>
 			<p class="post-nav__post-title">Getting Started with Hugo</p>
 		</a>
 	</div>
 	<div class="post-nav__item post-nav__item--next">
-		<a class="post-nav__link" href="/post/creating-a-new-theme/" rel="next">
+		<a class="post-nav__link" href="https://kisoi-3.github.io/post/creating-a-new-theme/" rel="next">
 			<span class="post-nav__caption">Next&thinsp;»</span>
 			<p class="post-nav__post-title">Creating a New Theme</p>
 		</a>
@@ -389,18 +397,18 @@ so, such as in this example:</p>
 			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q" aria-label="SEARCH...">
 		</label>
 		<input class="widget-search__submit" type="submit" value="Search">
-		<input type="hidden" name="sitesearch" value="/" />
+		<input type="hidden" name="sitesearch" value="https://kisoi-3.github.io" />
 	</form>
 </div>
 <div class="widget-recent widget">
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="/post/basic-elements/">Basic HTML Elements</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/creating-a-new-theme/">Creating a New Theme</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/goisforlovers/">(Hu)go Template Primer</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/hugoisforlovers/">Getting Started with Hugo</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/migrate-from-jekyll/">Migrate to Hugo from Jekyll</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://kisoi-3.github.io/post/basic-elements/">Basic HTML Elements</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://kisoi-3.github.io/post/creating-a-new-theme/">Creating a New Theme</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://kisoi-3.github.io/post/goisforlovers/">(Hu)go Template Primer</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://kisoi-3.github.io/post/hugoisforlovers/">Getting Started with Hugo</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://kisoi-3.github.io/post/migrate-from-jekyll/">Migrate to Hugo from Jekyll</a></li>
 		</ul>
 	</div>
 </div>
@@ -409,10 +417,10 @@ so, such as in this example:</p>
 	<div class="widget__content">
 		<ul class="widget__list">
 			<li class="widget__item">
-				<a class="widget__link" href="/categories/development/">Development</a>
+				<a class="widget__link" href="https://kisoi-3.github.io/categories/development/">Development</a>
 			</li>
 			<li class="widget__item">
-				<a class="widget__link" href="/categories/golang/">golang</a>
+				<a class="widget__link" href="https://kisoi-3.github.io/categories/golang/">golang</a>
 			</li>
 		</ul>
 	</div>
@@ -420,15 +428,15 @@ so, such as in this example:</p>
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-		<a class="widget-taglist__link widget__link btn" href="/tags/basic-elements/" title="Basic Elements">Basic Elements</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/css/" title="CSS">CSS</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/development/" title="development">development</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/go/" title="go">go</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/golang/" title="golang">golang</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/html/" title="HTML">HTML</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="hugo">hugo</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/templates/" title="templates">templates</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/themes/" title="themes">themes</a>
+		<a class="widget-taglist__link widget__link btn" href="https://kisoi-3.github.io/tags/basic-elements/" title="Basic Elements">Basic Elements</a>
+		<a class="widget-taglist__link widget__link btn" href="https://kisoi-3.github.io/tags/css/" title="CSS">CSS</a>
+		<a class="widget-taglist__link widget__link btn" href="https://kisoi-3.github.io/tags/development/" title="development">development</a>
+		<a class="widget-taglist__link widget__link btn" href="https://kisoi-3.github.io/tags/go/" title="go">go</a>
+		<a class="widget-taglist__link widget__link btn" href="https://kisoi-3.github.io/tags/golang/" title="golang">golang</a>
+		<a class="widget-taglist__link widget__link btn" href="https://kisoi-3.github.io/tags/html/" title="HTML">HTML</a>
+		<a class="widget-taglist__link widget__link btn" href="https://kisoi-3.github.io/tags/hugo/" title="hugo">hugo</a>
+		<a class="widget-taglist__link widget__link btn" href="https://kisoi-3.github.io/tags/templates/" title="templates">templates</a>
+		<a class="widget-taglist__link widget__link btn" href="https://kisoi-3.github.io/tags/themes/" title="themes">themes</a>
 	</div>
 </div>
 </aside>
@@ -437,12 +445,12 @@ so, such as in this example:</p>
 	<div class="container footer__container flex">
 		
 		<div class="footer__copyright">
-			&copy; 2020 Mainroad.
+			&copy; 2020 kisoi3 blog.
 			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
 		</div>
 	</div>
 </footer>
 	</div>
-<script async defer src="/js/menu.js"></script>
+<script async defer src="https://kisoi-3.github.io/js/menu.js"></script>
 </body>
 </html>

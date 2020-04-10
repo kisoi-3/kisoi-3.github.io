@@ -1,24 +1,25 @@
 baseurl = "https://kisoi-3.github.io"
 canonifyurls = true
-
-title = "Mainroad"
-languageCode = "en-us"
+publishDir = "public"
+title = "kisoi3 blog"
+languageCode = "ja-jp"
 paginate = "10" # Number of posts per page
 theme = "mainroad"
+paginatePath = "page"
 disqusShortname = "" # Enable comments by entering your Disqus shortname
 googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 [Author]
-  name = "John Doe"
-  bio = "John Doe's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
+  name = "競イさん"
+  bio = "いつも何かを追いかけているのだ。"
   avatar = "img/avatar.png"
 
 [Params]
-  subtitle = "Just another site" # Subtitle of your site
-  description = "John Doe's Personal blog about everything" # Description of your site
+  subtitle = "地獄は対岸にあるのではない。背後にあるのだ。" # Subtitle of your site
+  description = "競技プログラミング略して競プロを始めたいアライさんの悶え苦しんだ軌跡なのだ。" # Description of your site
   opengraph = true
-  twitter_cards = false
-  readmore = false # Show "Read more" button in list if true
+  twitter_cards = true
+  readmore = true # Show "Read more" button in list if true
   authorbox = true
   post_navigation = true
   post_meta = ["date", "categories"] # Order of post meta information
@@ -34,4 +35,6 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   recent_num = 5 # Set the number of articles in the "Recent articles" widget
   tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
 
-publishDir = "docs"
+[Params.widgets.social]
+twitter = "@kisoi_3"
+github = "https://github.com/kisoi-3/"
